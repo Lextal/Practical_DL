@@ -75,7 +75,7 @@ def load_cifar100(data_path=".", target_classes=(13, 37), channels_last=False, t
     
     if not os.path.exists(test_path) or not os.path.exists(train_path):
         print ("Dataset not found. Downloading...")
-        download_cifar(path, 
+        download_cifar(data_path, 
                       url="https://www.cs.toronto.edu/~kriz/cifar-100-python.tar.gz", 
                       tarname="cifar-100-python.tar.gz")
 
